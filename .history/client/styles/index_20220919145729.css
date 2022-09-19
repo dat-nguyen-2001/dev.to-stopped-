@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-wrapper {
+    justify-content: space-between;
+}
+
+body {
+    background-color: ;
+}
