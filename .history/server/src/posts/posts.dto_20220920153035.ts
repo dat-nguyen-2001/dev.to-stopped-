@@ -1,0 +1,15 @@
+import { IsEmail, IsNotEmpty, MinLength } from "class-validator";
+// import { Comment } from "src/typeorm/comment.entity";
+// import { Post } from "src/typeorm/post.entity";
+
+export class CreatePostDto {
+  @IsNotEmpty()
+  title: string;
+
+  @IsNotEmpty()
+  content: string;
+
+  @IsNotEmpty()
+  @IsEmail()
+  email: string;
+}
